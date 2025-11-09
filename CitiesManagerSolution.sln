@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitiesManager.WebAPI", "Cit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E76D18F5-17D8-4AE8-A249-B968D14D5363}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{9775F515-F2B9-4D0A-845D-7200F700AD51}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{22ABA1D2-7695-424F-BB5E-52771799669E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{60C0B449-4D7D-4ACC-B0B5-6B29F0C68FFC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8BCF31D9-5059-4C16-AC4D-B4E6EFDFB31E}"
 	ProjectSection(SolutionItems) = preProject
-		firstdotnet.yml = firstdotnet.yml
+		dotnet-ci.yml = dotnet-ci.yml
 	EndProjectSection
 EndProject
 Global
@@ -29,8 +29,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9775F515-F2B9-4D0A-845D-7200F700AD51} = {E76D18F5-17D8-4AE8-A249-B968D14D5363}
-		{60C0B449-4D7D-4ACC-B0B5-6B29F0C68FFC} = {9775F515-F2B9-4D0A-845D-7200F700AD51}
+		{22ABA1D2-7695-424F-BB5E-52771799669E} = {E76D18F5-17D8-4AE8-A249-B968D14D5363}
+		{8BCF31D9-5059-4C16-AC4D-B4E6EFDFB31E} = {22ABA1D2-7695-424F-BB5E-52771799669E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C228ED1-423E-4F6A-B8D1-A63C27AC7F53}

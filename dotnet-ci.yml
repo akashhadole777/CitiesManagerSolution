@@ -1,0 +1,27 @@
+name: .NET CI - Cities Manager
+on: 
+    push:
+        branches:
+        - main
+        - master
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout code
+        - uses: actions/checkout@v4
+        - name: Setup .NET
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: '7.0'
+        - name: Restore dependencies
+          run: dotnet restore
+          working-directory: ./CitiesManager
+        - name: Build
+          run: dotnet build --no-restore --configuration Release
+          working-directory: ./CitiesManager
+        - name: After Build echo message
+          run: echo "Build completed successfully."
+        - name: Test
+          run: dotnet test --no-build --configuration Release --verbosity normal
+          working-directory: ./CitiesManager.Tests    
