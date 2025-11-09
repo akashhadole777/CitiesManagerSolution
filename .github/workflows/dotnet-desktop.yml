@@ -16,8 +16,7 @@ jobs:
             dotnet-version: '7.0'
         
         - name: Build
-          run: dotnet build --no-restore --configuration Release
-          working-directory: ./CitiesManager
+          run: dotnet build 
         - name: After Build echo message
           run: echo "Build completed successfully."
         - name: Test
