@@ -14,9 +14,7 @@ jobs:
           uses: actions/setup-dotnet@v4
           with:
             dotnet-version: '7.0'
-        - name: Restore dependencies
-          run: dotnet restore
-          working-directory: ./CitiesManager
+        
         - name: Build
           run: dotnet build --no-restore --configuration Release
           working-directory: ./CitiesManager
